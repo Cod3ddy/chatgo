@@ -2,7 +2,36 @@
   "type": "excalidraw",
   "version": 2,
   "source": "vscode-webview://0df58l0eqp9afd9tgvoim1dt82oo2d1hqok1d4nbcpicp869sblk",
-  "elements": [],
+  "elements": [
+    {
+      "id": "uwpnIPrkB0ufO0sfyyggB",
+      "type": "rectangle",
+      "x": -207.9999999999999,
+      "y": -360.99999999999994,
+      "width": 175,
+      "height": 170,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1505154093,
+      "version": 86,
+      "versionNonce": 256441411,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1739662406326,
+      "link": null,
+      "locked": false
+    }
+  ],
   "appState": {
     "gridSize": null,
     "viewBackgroundColor": "#ffffff"
