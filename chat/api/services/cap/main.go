@@ -4,7 +4,9 @@ import (
 	"context"
 	"log/slog"
 	"os"
+	"os/signal"
 	"runtime"
+	"syscall"
 
 	"github.com/Cod3ddy/chatgo/chat/foundation/logger"
 )
@@ -34,6 +36,16 @@ func run(ctx context.Context, log *logger.Logger) error{
 
 	log.Info(ctx, "startup", "GOMAXPROCS", runtime.GOMAXPROCS(0))
 
+
+	// ------------------------------------------
 	
+	log.Info(ctx, "status", "started")
+
+	defer 	log.Info(ctx, "status", "shutting down")
+
+	shutdown := make(chan os.Signal, 1)
+	signal.Notify(shutdown, syscall.SIGINT, syscall.SIGTERM)
+	<-shutdown
+
 	return nil
 }
